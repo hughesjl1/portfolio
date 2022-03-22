@@ -92,13 +92,13 @@ const ProjectCardGridMobile = () => {
 
     return (
         <Flex mx={{ 'sm': '0%', md : '5vw' }} mt={"8rem"} pb={'25rem'} justifyContent={"center"} width={{ 'sm': '100%', md : '90vw' }} backgroundColor={"gray.200"} height={"100%"} minHeight={'100vh'}>
-            <Tabs isFitted position={'fixed'} px={{ 'sm': '0%', mx : '5vw' }}  mb={{ 'sm': '2rem', md : '0rem' }} width={{ 'sm': '100%', md : '90vw' }} height={'100%'}>
-                <TabList bg={'white'}>
+            <Tabs isFitted position={'fixed'} px={{ 'sm': '0%', mx : '0vw' }}  mb={{ 'sm': '2rem', md : '0rem' }} width={{ 'sm': '100%', md : '90vw' }} height={'100%'}>
+                <TabList bg={'white'} px={'5vw'}>
                     <Tab>Web3</Tab>
                     <Tab>Serverless</Tab>
                 </TabList>
                 <TabPanels >
-                    <TabPanel overflowY={'scroll'} height={'85vh'} width={{ 'sm': '100%', md : '90vw' }} px={'3vw'} pb={'10vh'}>
+                    <TabPanel overflowY={'scroll'} height={'85vh'} width={{ 'sm': '100%', md : '90vw' }} px={'0vw'} pb={'10vh'}>
                         {projects.map((project) => <CardMobile {...project} />)}
                     </TabPanel>
                     <TabPanel>
