@@ -68,3 +68,4 @@ const ProjectCard = ({ title, description, image, valueAdd, responsibilites }: I
     )
   }
   
+  export default ProjectCard

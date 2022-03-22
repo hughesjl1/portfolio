@@ -33,3 +33,5 @@ export const projects : IProjectSpec[] = [
     }
 
 ]
+
+export default projects
