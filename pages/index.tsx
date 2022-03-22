@@ -17,16 +17,17 @@ const Home: NextPage = () => {
   const [isNotMobile] = useMediaQuery('(min-width: 700px)');
 
   return (
-    <Box bg={"gray.200"} mt={'-3rem'}>
-      <Flex
+    <Box bg={"gray.200"} mt={'4rem'}>
+      {/* <Flex
         backgroundColor={'black'}
-        minHeight={'5rem'}
+        minHeight={'7.5vh'}
         position={"fixed"}
         top={"0px"}
         width={"100%"}
         padding={'0.5rem'}
         alignItems={'center'}
         justifyContent={'space-between'}
+      
       >
         <Image
           height={"3rem"}
@@ -39,19 +40,41 @@ const Home: NextPage = () => {
         </Flex>
 
 
-      </Flex>
-      <Box flex={1} mx={{'sm' : '5%', 'md': '10%', 'lg' : '25%'}} pt={"10rem"} pb={'25rem'} justifyContent={"center"} width={{'sm' : '90%', 'md': '80%', 'lg' : '50%'}} backgroundColor={"gray.200"} height={"100%"}>
-        
-        {/* {projects.map(project => (<ProjectCardGrid {...project} /> ))} */}
-        {projects.map(project => (isNotMobile ? <DynamicProjectCard {...project} /> : <DynamicProjectCardMobile {...project} />))}
+      </Flex> */}
+            <Box
+        backgroundColor={'black'}
+        minHeight={'7.5vh'}
+        position={"fixed"}
+        top={"0px"}
+        width={"100%"}
+        padding={'0.5rem'}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        display={'block'}
+      
+      >
+        <Image
+          height={"3rem"}
+          objectFit='cover'
+          src={'/jlhdev.jpg'}
+          alt='Logo JLHDEV'
+        />
+        <Flex>
+          <Text color={'white'}>Projects</Text>
+        </Flex>
 
-
-        <Box height={"30vw"} backgroundColor={"black"} margin={"2rem"}>a</Box>
 
       </Box>
+      {isNotMobile ? <DynamicProjectCardMobile /> : <DynamicProjectCardMobile />}
+        
+
+
+
+
+      
       <Flex
         backgroundColor={'white '}
-        minHeight={'5rem'}
+        minHeight={'7.5vh'}
         position={"fixed"}
         bottom={"0px"}
         width={"100%"}

@@ -9,9 +9,10 @@ const colors = {
 };
 
 const breakpoints = {
-    'sm' : '700px',
-    'md' : '1000px',
-    'lg' : '1235px'
+    sm : "350px",
+    md : "700px",
+    lg : "1000px",
+    xl : "1235px"
 }
 
 
