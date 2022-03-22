@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   const [isNotMobile] = useMediaQuery('(min-width: 700px)');
 
   return (
-    <Box bg={"gray.200"} mt={{ 'sm': '-3rem', md : '-2.4rem' }}>
+    <Box bg={"gray.200"} mt={'-3rem'}>
       <Flex
         backgroundColor={'black'}
         minHeight={'7.5vh'}
@@ -27,7 +27,6 @@ const Home: NextPage = () => {
         padding={'0.5rem'}
         alignItems={'center'}
         justifyContent={'space-between'}
-      
       >
         <Image
           height={"3rem"}

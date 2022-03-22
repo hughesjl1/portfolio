@@ -22,7 +22,7 @@ const CardMobile = ({ title, description, image, valueAdd, responsibilites }: IP
     const textFontSize = {'base': '0.6rem', 'sm': '0.7rem', 'md': '0.8rem', 'lg' : '1rem'};
 
     return (
-        <Box height={"50vh"} width={"94vw"} backgroundColor={"white"} mb={4} pt={1} mx={'0vw'} boxShadow={'md'}>
+        <Box height={"50vh"} width={{'sm' : '96vw','md' : '50vw'}} backgroundColor={"white"} mb={4} pt={1} mx={'0vw'} boxShadow={'md'}>
             <Grid templateColumns={"repeat(4, 1fr)"} templateRows={"repeat(10,1fr)"} gap={1} height={'100%'}>
                 <GridItem colStart={1} colEnd={5} rowStart={1} rowEnd={2} >
 
@@ -91,14 +91,14 @@ const ProjectCardGridMobile = () => {
 
 
     return (
-        <Flex mx={{ 'sm': '0%', md : '5vw' }} mt={"8rem"} pb={'25rem'} justifyContent={"center"} width={{ 'sm': '100%', md : '90vw' }} backgroundColor={"gray.200"} height={"100%"} minHeight={'100vh'}>
-            <Tabs isFitted position={'fixed'} px={{ 'sm': '0%', mx : '0vw' }}  mb={{ 'sm': '2rem', md : '0rem' }} width={{ 'sm': '100%', md : '90vw' }} height={'100%'}>
-                <TabList bg={'white'} px={'5vw'}>
+        <Box flex={1} mx={{ 'sm': '0%' }} pt={"8rem"} pb={'25rem'} justifyContent={"center"} width={{ 'sm': '100%' }} backgroundColor={"gray.200"} height={"100%"} minHeight={'100vh'}>
+            <Tabs isFitted position={'fixed'} mb={'2rem'} width={'100%'} height={'100%'}>
+                <TabList bg={'white'} px={{'sm' : '0px','md' : '25vw'}}>
                     <Tab>Web3</Tab>
                     <Tab>Serverless</Tab>
                 </TabList>
                 <TabPanels >
-                    <TabPanel overflowY={'scroll'} height={'85vh'} width={{ 'sm': '100%', md : '90vw' }} px={'0vw'} pb={'10vh'}>
+                    <TabPanel overflowY={'scroll'} height={'85vh'} width={'100vw'} px={{'sm' : '3vw','md' : '25vw'}} pb={'10vw'}>
                         {projects.map((project) => <CardMobile {...project} />)}
                     </TabPanel>
                     <TabPanel>
@@ -107,7 +107,7 @@ const ProjectCardGridMobile = () => {
                 </TabPanels>
             </Tabs>
 
-        </Flex>
+        </Box>
 
     )
 }
