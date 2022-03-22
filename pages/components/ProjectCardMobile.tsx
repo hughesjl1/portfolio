@@ -54,7 +54,7 @@ const ProjectCardGridMobile = ({ title, description, image, valueAdd, responsibi
         </GridItem>
 
         {roles.map(({ role, title, icon, colStart }) => (
-          <GridItem colStart={colStart} colSpan={2} rowStart={7} rowEnd={10} mx={1} mt={3}>
+          <GridItem colStart={colStart} colSpan={2} rowStart={7} rowEnd={10} mx={1} mt={3} key={`${title} ${colStart}`}>
             <VStack align={'start'}>
               <HStack>
                 <Flex width={'2rem'} height={'2rem'} bg={'gray.200'} alignItems={'center'} justifyContent={'center'} borderRadius={'5px'}>

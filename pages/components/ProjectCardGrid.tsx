@@ -54,7 +54,7 @@ const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites,
         <GridItem colSpan={10} rowStart={7} rowEnd={10}>
           <VStack>
             {roles.map(({ role, icon, title }, index) => (
-              <HStack width={'100%'} gap={3}>
+              <HStack width={'100%'} gap={3} key={`${title} ${index}`}>
                 <Flex width={'3rem'} height={'3rem'} bg={'gray.200'} alignItems={'center'} justifyContent={'center'} borderRadius={'5px'}>
                   <Icon as={icon} width={'1.5rem'} height={'1.5rem'} bg={'gray.200'} />
                 </Flex>
