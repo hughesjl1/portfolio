@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     <Box bg={"gray.200"} mt={'-3rem'}>
       <Flex
         backgroundColor={'black'}
-        minHeight={'6rem'}
+        minHeight={'5rem'}
         position={"fixed"}
         top={"0px"}
         width={"100%"}
