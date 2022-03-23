@@ -41,7 +41,7 @@ const ProjectCard = ({ title, description, image, valueAdd, responsibilites }: I
   
         <VStack>
           {roles.map(({ role, icon, title }) => (
-            <HStack width={'100%'}>
+            <HStack width={'100%'} key={title}>
               <Flex width={'3rem'} height={'3rem'} bg={'gray.200'} alignItems={'center'} justifyContent={'center'} borderRadius={'5px'}>
                 <Icon as={icon} width={'1.5rem'} height={'1.5rem'} bg={'gray.200'} />
               </Flex>
@@ -68,3 +68,4 @@ const ProjectCard = ({ title, description, image, valueAdd, responsibilites }: I
     )
   }
   
+  export default ProjectCard
