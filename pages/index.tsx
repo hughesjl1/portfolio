@@ -4,13 +4,13 @@ import { Heading, Box, Flex, Text, Image, VStack, HStack, Icon, Tabs, TabList, T
 import { AiFillTwitterSquare } from 'react-icons/ai';
 import { GrDiamond } from 'react-icons/gr';
 import { Gi3DHammer } from 'react-icons/gi';
-import { IProjectSpec, projects } from './data/data';
-import ProjectCardGrid from './components/ProjectCardGrid';
-import ProjectCardGridMobile from './components/ProjectCardMobile';
+import { IProjectSpec, projects } from '../data/data';
+import ProjectCardGrid from '../components/ProjectCardGrid';
+import ProjectCardGridMobile from '../components/ProjectCardMobile';
 
 
-const DynamicProjectCardMobile = dynamic(() => import('./components/ProjectCardMobile'), {ssr : false});
-const DynamicProjectCard = dynamic(() => import('./components/ProjectCardGrid'), {ssr : false});
+const DynamicProjectCardMobile = dynamic(() => import('../components/ProjectCardMobile'), {ssr : false});
+const DynamicProjectCard = dynamic(() => import('../components/ProjectCardGrid'), {ssr : false});
 
 const Home: NextPage = () => {
 
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     <Box bg={"gray.200"}>
       <Flex
         backgroundColor={'black'}
-        minHeight={'7.5vh'}
+        height={'7.5vh'}
         position={"fixed"}
         top={"0px"}
         width={"100%"}
