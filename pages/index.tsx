@@ -17,7 +17,7 @@ const Home: NextPage = () => {
   const [isNotMobile] = useMediaQuery('(min-width: 700px)');
 
   return (
-    <Box bg={"gray.200"} mt={'-3rem'}>
+    <Box bg={"gray.200"}>
       <Flex
         backgroundColor={'black'}
         minHeight={'7.5vh'}
@@ -40,6 +40,29 @@ const Home: NextPage = () => {
 
 
       </Flex>
+      {/* <Box
+        backgroundColor={'black'}
+        minHeight={'7.5vh'}
+        position={"fixed"}
+        top={"0px"}
+        width={"100%"}
+        padding={'0.5rem'}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        display={'inline-block'}
+      >
+        <Image
+          height={"3rem"}
+          objectFit='cover'
+          src={'/jlhdev.jpg'}
+          alt='Logo JLHDEV'
+        />
+        <Flex>
+          <Text color={'white'}>Projects</Text>
+        </Flex>
+
+
+      </Box> */}
       {isNotMobile ? <DynamicProjectCardMobile /> : <DynamicProjectCardMobile />}
         
 

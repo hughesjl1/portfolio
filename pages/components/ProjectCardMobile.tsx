@@ -91,7 +91,7 @@ const ProjectCardGridMobile = () => {
 
 
     return (
-        <Box flex={1} mx={{ 'sm': '0%' }} pt={"8rem"} pb={'25rem'} justifyContent={"center"} width={{ 'sm': '100%' }} backgroundColor={"gray.200"} height={"100%"} minHeight={'100vh'}>
+        <Box  mx={{ 'sm': '0%' }} pt={"7.5vh"} pb={'25rem'} justifyContent={"center"} width={{ 'sm': '100%' }} backgroundColor={"gray.200"} height={"100%"} minHeight={'100vh'}>
             <Tabs isFitted position={'fixed'} mb={'2rem'} width={'100%'} height={'100%'}>
                 <TabList bg={'white'} px={{'sm' : '0px','md' : '25vw'}}>
                     <Tab>Web3</Tab>
