@@ -46,8 +46,6 @@ const Home: NextPage = () => {
         {projects.map(project => (isNotMobile ? <DynamicProjectCard {...project} /> : <DynamicProjectCardMobile {...project} />))}
 
 
-        <Box height={"30vw"} backgroundColor={"black"} margin={"2rem"}>a</Box>
-
       </Box>
       <Flex
         backgroundColor={'white '}
