@@ -55,7 +55,30 @@ export const projects : IProjectSpec[] = [
         skills : ['Python', 'FastApi', 'Docker', 'Numpy', 'Jupyter'],
         type : 'commercial',
         github : null
-    }
+    },
+    {
+        title : "Financial Services, a serverless approach",
+        description : "Utilise a serverless approach for API driven data sources for financial applications.",
+        image : '/factory.png',
+        url : '',
+        responsibilites : 'Designed, developed and deployed.',
+        valueAdd : 'Enable financial applications to be fast and agile to changing datasources and user requirements.',
+        skills : ['AWS CDK', 'Python', 'Docker'],
+        type : 'dev',
+        github : 'https://github.com/hughesjl1/Finance_Serverless'
+    },
+    {
+        title : "Web3 Marketplace CryptoCorgis",
+        description : "If it's good enough for the Queen it's good enough for you, a place to buy favourite digital corgis.",
+        image : '/factory.png',
+        url : '',
+        responsibilites : 'Designed, developed and deployed.',
+        valueAdd : 'Marketplace for favourite digital corgis.',
+        skills : ['React', 'Solidity'],
+        type : 'dev',
+        github : 'https://github.com/hughesjl1/CorgiNft'
+    },
+
 
 
 ]
