@@ -6,7 +6,9 @@ export interface IProjectSpec {
     responsibilites : string
     valueAdd : string
     skills : string[]
-    type : 'commercial' | 'dev'
+    type : 'commercial' | 'dev',
+    github? : string | null,
+    
 }
 
 export const projects : IProjectSpec[] = [
@@ -18,8 +20,8 @@ export const projects : IProjectSpec[] = [
         responsibilites : "Build website from scratch React/Typescript",
         valueAdd : "Improved UI to deliver key / critical information for investors to make informed judgments",
         skills : ['React', 'Typescript'],
-        type : 'commercial'
-
+        type : 'commercial',
+        github : null
     },
     {
         title : "AlgoFactory Website",
@@ -29,7 +31,8 @@ export const projects : IProjectSpec[] = [
         responsibilites : 'Build website React / Typescript / GraphQl. Build graphql api in Scala',
         valueAdd : "Website improved search and in depth evaluattion of algorithms performance",
         skills : ['React', 'Typescript'],
-        type : 'commercial'
+        type : 'commercial',
+        github : null
     },
     {
         title : "Algorithmss R&D",
@@ -39,7 +42,8 @@ export const projects : IProjectSpec[] = [
         responsibilites : 'Researched range of options using Python, Pandas, Jupyter Notebooks and various AI/ML libraries',
         valueAdd : 'improve basline performance by 3-7x',
         skills : ['Python', 'Pandas', 'Tensorflow', 'Numpy', 'Jupyter'],
-        type : 'commercial'
+        type : 'commercial',
+        github : null
     },
     {
         title : "MicroService R&D Deployment",
@@ -49,7 +53,8 @@ export const projects : IProjectSpec[] = [
         responsibilites : 'Designed, developed and deployed the containerised micro service arcchitexture',
         valueAdd : 'Enabled quick delivery of models from research to client ready API\'s',
         skills : ['Python', 'FastApi', 'Docker', 'Numpy', 'Jupyter'],
-        type : 'commercial'
+        type : 'commercial',
+        github : null
     }
 
 
