@@ -69,7 +69,7 @@ export const projects : IProjectSpec[] = [
     },
     {
         title : "Web3 Marketplace CryptoCorgis",
-        description : "If it's good enough for the Queen it's good enough for you, a place to buy favourite digital corgis.",
+        description : "If it's good enough for the Queen it's good enough for you, a place to buy your favourite digital corgis.",
         image : '/factory.png',
         url : '',
         responsibilites : 'Designed, developed and deployed.',
