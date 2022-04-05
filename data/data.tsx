@@ -78,6 +78,17 @@ export const projects : IProjectSpec[] = [
         type : 'dev',
         github : 'https://github.com/hughesjl1/CorgiNft'
     },
+    {
+        title : "Domain Service for .corgi Buildspace",
+        description : "Buildspace project. A decentralized marketplace for .corgi domains.",
+        image : '/corgi_portfolio.png',
+        url : '',
+        responsibilites : 'Designed, developed and deployed.',
+        valueAdd : 'Marketplace for .corgi domains.',
+        skills : ['React', 'Solidity'],
+        type : 'dev',
+        github : 'github.com:hughesjl1/ens_domains_buildspace.git'
+    },
 
 
 
