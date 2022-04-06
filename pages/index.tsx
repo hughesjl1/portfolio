@@ -63,16 +63,17 @@ const Home: NextPage = () => {
 
 
       </Box> */}
-      {isNotMobile ? <DynamicProjectCardMobile /> : <DynamicProjectCardMobile />}
         
+        {/* {projects.map(project => (<ProjectCardGrid {...project} /> ))} */}
+        {/* {projects.map(project => (isNotMobile ? <DynamicProjectCard {...project} /> : <DynamicProjectCardMobile {...project} />))}
 
 
+      </Box> */}
+      {isNotMobile ? <DynamicProjectCardMobile /> : <DynamicProjectCardMobile />}
 
-
-      
       <Flex
         backgroundColor={'white '}
-        minHeight={'7.5vh'}
+        minHeight={'5rem'}
         position={"fixed"}
         bottom={"0px"}
         width={"100%"}

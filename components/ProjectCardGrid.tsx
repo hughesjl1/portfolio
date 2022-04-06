@@ -1,11 +1,11 @@
-import { Heading, Box, Flex, Text, Image, VStack, HStack, Icon, Tabs, TabList, Tab, TabPanels, TabPanel, Badge, Grid, GridItem, Spacer, useMediaQuery } from '@chakra-ui/react';
+import { Heading, Box, Flex, Text, Image, VStack, HStack, Icon, Link, Tabs, TabList, Tab, TabPanels, TabPanel, Badge, Grid, GridItem, Spacer, useMediaQuery } from '@chakra-ui/react';
 import { AiFillTwitterSquare } from 'react-icons/ai';
 import { GrDiamond } from 'react-icons/gr';
 import { Gi3DHammer } from 'react-icons/gi';
 import { IProjectSpec, projects } from '../data/data';
 
 
-const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites, skills, type }: IProjectSpec) => {
+const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites, skills, type, github }: IProjectSpec) => {
 
   const roles = [{
     title: "Responsibilities",
@@ -19,7 +19,7 @@ const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites,
   ]
 
   return (
-    <Box height={{"md" : "45vh", 'ld' : '35vh'}} backgroundColor={"white"} margin={"2rem"} pt={1}>
+    <Box height={{ "md": "45vh", 'ld': '35vh' }} backgroundColor={"white"} margin={"2rem"} pt={1}>
       <Grid h={'100%'} width={'100%'} templateColumns={'repeat(9, 1fr)'} templateRows={'repeat(10, 1fr)'} gap={3} padding={3}>
         {/* -
      - Image Component 
@@ -54,13 +54,13 @@ const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites,
         <GridItem colSpan={10} rowStart={7} rowEnd={10}>
           <VStack>
             {roles.map(({ role, icon, title }, index) => (
-              <HStack width={'100%'} gap={3}>
+              <HStack width={'100%'} gap={3} key={`${title} ${index}`}>
                 <Flex width={'3rem'} height={'3rem'} bg={'gray.200'} alignItems={'center'} justifyContent={'center'} borderRadius={'5px'}>
                   <Icon as={icon} width={'1.5rem'} height={'1.5rem'} bg={'gray.200'} />
                 </Flex>
                 <VStack justifyContent={'start'} alignContent={'start'} align={'flex-start'}>
                   <Heading as={'h6'} size={'xs'}>{title}</Heading>
-                  <Text fontSize={{'sm': '0.8rem','md' : '1rem'}}>{role}</Text>
+                  <Text fontSize={{ 'sm': '0.8rem', 'md': '1rem' }}>{role}</Text>
                 </VStack>
                 {index === 0 && <Spacer />}
               </HStack>
@@ -71,9 +71,12 @@ const ProjectCardGrid = ({ title, description, image, valueAdd, responsibilites,
 
         <GridItem colStart={3} colEnd={8} rowStart={10} rowEnd={11} >
           <HStack justifyContent={'space-around'} width={'100%'} justifySelf={'end'} alignSelf={'flex-end'}>
-            <Icon as={AiFillTwitterSquare} />
-            <Icon as={AiFillTwitterSquare} />
-            <Icon as={AiFillTwitterSquare} />
+            {
+              github &&
+              <Link href={github} isExternal>
+                <Icon as={AiFillTwitterSquare} />
+              </Link>
+            }
           </HStack>
         </GridItem>
 
