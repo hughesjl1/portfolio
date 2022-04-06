@@ -70,7 +70,7 @@ export const projects : IProjectSpec[] = [
     {
         title : "Web3 Marketplace CryptoCorgis",
         description : "If it's good enough for the Queen it's good enough for you, a place to buy your favourite digital corgis.",
-        image : '/factory.png',
+        image : '/cryptocorgi.png',
         url : '',
         responsibilites : 'Designed, developed and deployed.',
         valueAdd : 'Marketplace for favourite digital corgis.',
@@ -79,7 +79,7 @@ export const projects : IProjectSpec[] = [
         github : 'https://github.com/hughesjl1/CorgiNft'
     },
     {
-        title : "Domain Service for .corgi Buildspace",
+        title : "Web3 Domain Service for .corgi Buildspace",
         description : "Buildspace project. A decentralized marketplace for .corgi domains.",
         image : '/corgi_portfolio.png',
         url : '',
