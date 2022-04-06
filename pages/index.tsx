@@ -85,7 +85,14 @@ const Home: NextPage = () => {
         width={"100%"}
         padding={'0.5rem'}
         alignItems={'center'}
-      ></Flex>
+        justifyContent={'center'}
+      >
+        <Text fontSize={'0.8rem'}>
+          Dr Jonathon Hughes <br></br>
+          linkedin.com/in/jlhdev/ <br></br>
+          github.com/hughesjl1 <br></br>
+        </Text>
+      </Flex>
     </Box>
   )
 }
