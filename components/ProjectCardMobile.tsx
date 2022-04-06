@@ -55,7 +55,7 @@ const CardMobile = ({ title, description, image, valueAdd, responsibilites }: IP
                 </GridItem>
 
                 {roles.map(({ role, title, icon, colStart }) => (
-                    <GridItem colStart={colStart} colSpan={2} rowStart={7} rowEnd={10} mx={1} mt={3}>
+                    <GridItem colStart={colStart} colSpan={2} rowStart={7} rowEnd={10} mx={1} mt={3} key={`${role}-${title}`}>
                         <VStack align={'start'}>
                             <HStack>
                                 <Flex width={'2rem'} height={'2rem'} bg={'gray.200'} alignItems={'center'} justifyContent={'center'} borderRadius={'5px'}>
@@ -99,7 +99,7 @@ const ProjectCardGridMobile = () => {
                 </TabList>
                 <TabPanels >
                     <TabPanel overflowY={'scroll'} height={'85vh'} width={'100vw'} px={{'sm' : '3vw','md' : '25vw'}} pb={'10vw'}>
-                        {projects.map((project) => <CardMobile {...project} />)}
+                        {projects.map((project, index) => <CardMobile {...project} key={index}/>)}
                     </TabPanel>
                     <TabPanel>
 
