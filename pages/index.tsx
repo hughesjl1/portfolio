@@ -31,6 +31,12 @@ const Home: NextPage = () => {
         <Image
           height={"3rem"}
           objectFit='cover'
+          src={'/devlogo.png'}
+          alt='Logo JLHDEV'
+        />
+         <Image
+          height={"3rem"}
+          objectFit='cover'
           src={'/jlhdev.jpg'}
           alt='Logo JLHDEV'
         />
