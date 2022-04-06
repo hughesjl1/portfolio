@@ -22,7 +22,7 @@ const CardMobile = ({ title, description, image, valueAdd, responsibilites }: IP
     const textFontSize = {'base': '0.6rem', 'sm': '0.7rem', 'md': '0.8rem', 'lg' : '1rem'};
 
     return (
-        <Box height={"50vh"} width={{'sm' : '96vw','md' : '50vw'}} backgroundColor={"white"} mb={4} pt={1} mx={'0vw'} boxShadow={'md'}>
+        <Box height={"65vh"} width={{'sm' : '96vw','md' : '50vw'}} backgroundColor={"white"} mb={4} pt={1} mx={'0vw'} boxShadow={'md'}>
             <Grid templateColumns={"repeat(4, 1fr)"} templateRows={"repeat(10,1fr)"} gap={1} height={'100%'}>
                 <GridItem colStart={1} colEnd={5} rowStart={1} rowEnd={2} >
 
