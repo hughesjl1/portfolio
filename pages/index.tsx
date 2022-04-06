@@ -17,16 +17,45 @@ const Home: NextPage = () => {
   const [isNotMobile] = useMediaQuery('(min-width: 700px)');
 
   return (
-    <Box bg={"gray.200"} mt={'-3rem'}>
+    <Box bg={"gray.200"}>
       <Flex
         backgroundColor={'black'}
-        minHeight={'5rem'}
+        height={'7.5vh'}
         position={"fixed"}
         top={"0px"}
         width={"100%"}
         padding={'0.5rem'}
         alignItems={'center'}
         justifyContent={'space-between'}
+      >
+        <Image
+          height={"3rem"}
+          objectFit='cover'
+          src={'/devlogo.png'}
+          alt='Logo JLHDEV'
+        />
+         <Image
+          height={"3rem"}
+          objectFit='cover'
+          src={'/jlhdev.jpg'}
+          alt='Logo JLHDEV'
+        />
+        <Flex>
+          <Text color={'white'}>Projects</Text>
+        </Flex>
+
+
+      </Flex>
+      {/* <Box
+        backgroundColor={'black'}
+        minHeight={'7.5vh'}
+        position={"fixed"}
+        top={"0px"}
+        width={"100%"}
+        padding={'0.5rem'}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        display={'inline-block'}
       >
         <Image
           height={"3rem"}
@@ -39,14 +68,15 @@ const Home: NextPage = () => {
         </Flex>
 
 
-      </Flex>
-      <Box flex={1} mx={{'sm' : '5%', 'md': '10%', 'lg' : '25%'}} pt={"10rem"} pb={'25rem'} justifyContent={"center"} width={{'sm' : '90%', 'md': '80%', 'lg' : '50%'}} backgroundColor={"gray.200"} height={"100%"}>
+      </Box> */}
         
         {/* {projects.map(project => (<ProjectCardGrid {...project} /> ))} */}
-        {projects.map(project => (isNotMobile ? <DynamicProjectCard {...project} /> : <DynamicProjectCardMobile {...project} />))}
+        {/* {projects.map(project => (isNotMobile ? <DynamicProjectCard {...project} /> : <DynamicProjectCardMobile {...project} />))}
 
 
-      </Box>
+      </Box> */}
+      {isNotMobile ? <DynamicProjectCardMobile /> : <DynamicProjectCardMobile />}
+
       <Flex
         backgroundColor={'white '}
         minHeight={'5rem'}
